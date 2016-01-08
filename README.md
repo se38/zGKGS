@@ -1,2 +1,16 @@
 # zGKGS
-The Google Knowledge Graph Search API for ABAP
+The [Google Knowledge Graph Search](https://developers.google.com/knowledge-graph/) API for ABAP
+
+See [Blog post on SAP Community Network](http://scn.sap.com/community/developer-center/cross-technology/blog/2015/01/23/neo4a-the-neo4j-abap-connector) <-- update Link!
+ 
+## Required Packages
+* [SchemA](https://github.com/se38/SchemA) - The schema.org ABAP Framework
+
+## Installation 
+Clone this repository with [abapGIT](https://github.com/larshp/abapGit) into a package of your choice. 
+
+## Usage
+see demo report (wiki to follow)
+
+## License
+This software is published under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)

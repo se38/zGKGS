@@ -1,4 +1,4 @@
-"! <p class="shorttext synchronized" lang="de">Google KGS: A result returned by searching for an entity</p>
+"! <p class="shorttext synchronized" lang="en">Google KGS: A result returned by searching for an entity</p>
 CLASS zcl_gkgs_entity_search_result DEFINITION
   PUBLIC
   INHERITING FROM zcl_schema_intangible

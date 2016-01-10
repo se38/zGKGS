@@ -1,4 +1,4 @@
-"! <p class="shorttext synchronized" lang="de">Google Knowledge Graph Search API</p>
+"! <p class="shorttext synchronized" lang="en">Google Knowledge Graph Search API</p>
 CLASS zcl_gkgs_api DEFINITION
   PUBLIC
   FINAL
@@ -9,6 +9,8 @@ CLASS zcl_gkgs_api DEFINITION
 **********************************************************************
 
   PUBLIC SECTION.
+    TYPES tt_results TYPE STANDARD TABLE OF REF TO zcl_gkgs_entity_search_result WITH EMPTY KEY.
+
     METHODS:
       "! Constructor of the Knowledge Graph API
       "!
@@ -30,7 +32,7 @@ CLASS zcl_gkgs_api DEFINITION
                   i_types     TYPE string OPTIONAL
                   i_prefix    TYPE string OPTIONAL
                   i_limit     TYPE i      DEFAULT 10
-        EXPORTING e_results   TYPE z_gkgs_entity_search_result_t.
+        EXPORTING e_results   TYPE tt_results.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
@@ -44,12 +46,12 @@ CLASS zcl_gkgs_api DEFINITION
       "! @parameter e_results | Result objects
       parse_result
         IMPORTING i_result  TYPE string
-        EXPORTING e_results TYPE z_gkgs_entity_search_result_t.
+        EXPORTING e_results TYPE tt_results.
 ENDCLASS.
 
 
 
-CLASS ZCL_GKGS_API IMPLEMENTATION.
+CLASS zcl_gkgs_api IMPLEMENTATION.
 
 
   METHOD constructor.

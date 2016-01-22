@@ -14,7 +14,7 @@
 *&---------------------------------------------------------------------*
 REPORT z_gkgs_demo.
 
-DATA(google_knowledge_graph_search) = NEW zcl_gkgs_api( i_api_key = 'AIzaSyAi8fPh6vnkNwmMuDXdy1Ma86aRbWi1pL8' ).
+DATA(google_knowledge_graph_search) = NEW zcl_gkgs_api( i_api_key = 'YourAPIkeyHere' ).
 
 google_knowledge_graph_search->search(
   EXPORTING

@@ -14,7 +14,7 @@ See [Blog post on SAP Community Network](http://scn.sap.com/community/abap/conne
 * install these certificates into transaction STRUST (the SSL client) (will be described in detail the wiki later)
 
 ## Usage
-see demo report (wiki to follow)
+see [demo report](https://github.com/se38/zGKGS/blob/master/z_gkgs_demo.prog.abap) 
 
 ## License
 This software is published under the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
